@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "konvio-cli"
+version = "0.1.0"
+description = "Personal CLI tool for automating routine tasks"
+authors = ["Vitaliy Kononenko <v@kononenko.tech>"]
+readme = "README.md"
+packages = [{include = "konvio"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+click = "^8.1.7"
+
+[tool.poetry.scripts]
+vk = "konvio.cli.cli:hello"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
